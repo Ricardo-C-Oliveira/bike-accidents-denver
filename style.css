@@ -1,0 +1,94 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    padding: 4px 8px;
+    background-color: #dedede;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 25;
+    color: #b1552d;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 15px Arial, Helvetica, sans-serif;
+    background: rgb(34, 3, 3);;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: block
+}
+
+.info h1 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+	text-align: center;
+}
+
+
+.legend {
+    line-height: 19px;
+    color: #FFF;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1;
+    border-radius: 50%
+}
+
+.legend span,
+.legend label {
+    display: block;
+    width: 50px;
+    height: 18px;
+    float: left;
+    opacity: 1;
+    text-align: center;
+    font-size: 80%;
+	font-family: "Roboto" sans-serif
+}
+
+.legend h1 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+	text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.awesome-marker i {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
