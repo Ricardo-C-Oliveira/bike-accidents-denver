@@ -96,7 +96,7 @@
            '<label>' + grades[i] + '</label>';
        }
 
-       div.innerHTML += '<br><button id="openChart">Chart Data</button>';
+       div.innerHTML += '<div style="text-align: center;  padding-top: 5px;"> <br><button id="openChart">Chart Data</button></div>';
 
        return div;
      };
@@ -107,10 +107,10 @@
      //jquery selector to open modal and set modal content
      $("#openChart").click(function() {
        map.fire('modal', {
-         content: '<h2 style="text-align: center">Bike Accidents: 2010 - April 2015</h2>' +
+         content: '<h2 style="text-align: center; color: white;">Bike Accidents <hr> 2010 - April 2015</h2>' +
            '<div id="chart"></div>',
          width: 500,
-         height: 400
+         height: 430
        });
        //and then chart!
        var chart = c3.generate({
@@ -134,6 +134,14 @@
            colors: {
              data1: "#fc4e2a"
            }
+         },
+         grid: {
+           y: {
+             show: true
+           },
+         },
+         legend: {
+           show: false
          },
          axis: {
            x: {
